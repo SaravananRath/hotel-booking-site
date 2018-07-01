@@ -1,0 +1,2 @@
+class Adoniscity < ApplicationRecord
+end

@@ -1,0 +1,13 @@
+en:
+  admin:
+    actions:
+      hotels_mapper:
+        title: "Hotel Mapper"
+        menu: "Hotel Mapper"
+        breadcrumb: "Hotel Mapper"
+        link: "hotel_mapper"
+      destination_mapper:
+        title: "Destination Mapper"
+        menu: "Destination Mapper"
+        breadcrumb: "Destination Mapper"
+        link: "destination_mapper"

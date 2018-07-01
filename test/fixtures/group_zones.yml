@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code: 1
+  name: MyString
+  description: MyString
+  zone: one
+  destination: one
+
+two:
+  code: 1
+  name: MyString
+  description: MyString
+  zone: two
+  destination: two

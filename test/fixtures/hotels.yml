@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code: 1
+  name: MyString
+  description: MyString
+  longitude: 1.5
+  latitude: 1.5
+  address: MyString
+  postal_code: MyString
+  email: MyString
+  license: MyString
+  website: MyString
+  s2c: MyString
+  country: one
+  destination: one
+  zone: one
+  category: one
+  group_category: one
+  chain: one
+  accommodation: one
+
+two:
+  code: 1
+  name: MyString
+  description: MyString
+  longitude: 1.5
+  latitude: 1.5
+  address: MyString
+  postal_code: MyString
+  email: MyString
+  license: MyString
+  website: MyString
+  s2c: MyString
+  country: two
+  destination: two
+  zone: two
+  category: two
+  group_category: two
+  chain: two
+  accommodation: two

@@ -1,0 +1,354 @@
+/* GlobalBeds Login Start */
+.Gbeds-login {
+	float: right;
+	margin-top: 5px;
+	text-align: right;
+	width: 70%;
+}
+.Gbeds-login input:focus {
+	border: 1px solid #000 !important;
+}
+.Gbeds-login input {
+	opacity: 0.7;
+	background: none !important;
+	border: 1px solid #000;
+	border-radius: 3px;
+	float: left;
+	font-size: 11px !important;
+	height: 35px !important;
+	margin-right: 7px;
+	padding: 6px !important;
+	width: 36%;
+	color: #000 !important;
+}
+.Gbeds-login label {
+	display: none;
+}
+.Gbeds-login #user-pass input.form-text {
+	width: 100%;
+	margin: 10px 0;
+	border: 1px solid #ddd;
+	border-radius: 0;
+}
+.Gbeds-login #user-pass button.form-submit {
+	width: 100%;
+}
+.Gbeds-login .alert-danger {
+	text-align: left;
+	position: absolute;
+	top: 90px;
+	z-index: 99;
+	left: 78px;
+	width: 66%;
+}
+.Gbeds-login .alert-danger a {
+	display: none;
+}
+.Gbeds-login .alert-danger a.close {
+	display: block;
+}
+.btn-orange, .Gbeds-login .btn-default, .Gbeds-login .btn-default:focus, .Gbeds-login .btn-default:hover, #update-currency-rate #edit-submit, #user-pass-reset #edit-actions button#edit-submit {
+	background: #ff6600;
+	border: none !important;
+	border-radius: 2px !important;
+	color: #fff;
+	font-size: 13px !important;
+	padding: 7px 23px !important;
+	text-transform: capitalize;
+}
+.Gbeds-login input::-webkit-input-placeholder {
+	color: #000 !important;
+}
+.Gbeds-login input:-moz-placeholder {
+	/* Firefox 18- */
+	color: #000 !important;
+}
+.Gbeds-login input::-moz-placeholder {
+	/* Firefox 19+ */
+	color: #000 !important;
+}
+.Gbeds-login input:-ms-input-placeholder {
+	color: #000 !important;
+}
+.Gbeds-login input[type=password]::-ms-reveal, input[type=password]::-ms-clear {
+	display: none;
+}
+.forgot_password {
+	font-size: 12px;
+	color: #464645;
+	white-space: nowrap;
+	position: relative;
+	right: 101px;
+	top: -7px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#gb-transaction-add #edit-submit,#edit-submit{
+	border:1px solid #ff6600 !important;
+	border-radius:2px !important;
+	color:#fff !important;
+	font-size:14px !important;
+	padding:8px 23px !important;
+	text-shadow:none;
+	background:#ff6600 !important;
+	height:38px;
+}
+/* GlobalBeds Login End */
+
+/* Login Main Image Styles Start */
+.main-home-bg{
+	z-index:-1;
+	height:100%;
+	width:100%;
+	position:relative;
+}
+.main-home-bg img{
+	min-height:100%;
+}
+img.bg{
+	min-height:100%;
+	min-width:1024px;
+	width:100%;
+	height:auto;
+	position:fixed;
+	top:0;
+	left:0;
+}
+@media screen and (max-width:1024px){
+	img.bg{
+		left:50%;
+		margin-left:-512px;
+	}
+}
+/* Login Main Image Styles End */
+
+/* Login Slider Styles Start */
+.city-bg{
+	background-image: url("../images/login/homecity.jpg") !important;
+}
+#sliderFrame{
+	position:absolute;
+	width:100%;
+	top:0px;
+	z-index:-9;
+	margin:0px auto;
+	left:0;
+	height:100%;
+	right:0;
+}
+#slider,#slider div.sliderInner{
+	width:100%;
+	height:100%;
+}
+#slider.bxslider{
+	background-repeat:no-repeat !important;
+}
+#slider{
+	/*background:#fff url(../images/slider/loading.gif) no-repeat 50% 50%;*/
+	position:relative;
+	margin:0 auto;
+	transform:translate3d(0,0,0);
+	box-shadow:0px 1px 5px #999999;
+}
+#slider a.imgLink,#slider div.video{
+	z-index:2;
+	position:absolute;
+	top:0px;
+	left:0px;
+	border:0;
+	padding:0;
+	margin:0;
+	width:100%;
+	height:100%;
+}
+#slider .video{
+	background:transparent url(/globalbeds/sites/all/themes/bootstrap/css/video.png) no-repeat 50% 50%;
+}
+#slider div.mc-caption-bg,#slider div.mc-caption-bg2{
+	display:none;
+	position:absolute;
+	width:100%;
+	height:auto;
+	padding:10px 0;
+	left:0px;
+	bottom:0px;
+	z-index:3;
+	overflow:hidden;
+	font-size:0;
+}
+#slider div.mc-caption-bg{
+	background:Black;
+}
+#slider div.mc-caption-bg2{
+	background:none;
+}
+#slider div.mc-caption{
+	font:bold 14px/20px Arial;
+	color:#EEE;
+	z-index:4;
+	text-align:center;
+	background:none;
+}
+#slider div.mc-caption a{
+	color:#FB0;
+}
+#slider div.mc-caption a:hover{
+	color:#DA0;
+}
+#slider div.navBulletsWrapper{
+	top:320px;
+	text-align:center;
+	background:none;
+	position:relative;
+	z-index:5;
+}
+#slider div.navBulletsWrapper div{
+	width:11px;
+	height:11px;
+	font-size:0;
+	color:White;
+	background:transparent url(/globalbeds/sites/all/themes/bootstrap/css/bullet.png) no-repeat 0 0;
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	overflow:hidden;
+	cursor:pointer;
+	margin:0 6px;
+}
+#slider div.navBulletsWrapper div.active{
+	background-position:0 -11px;
+}
+#slider div.loading{
+	width:100%;
+	height:100%;
+	background:transparent url(../images/slider/loading.gif) no-repeat 50% 50%;
+	filter:alpha(opacity=60);
+	opacity:0.6;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:9;
+}
+#slider img,#slider>b,#slider a>b{
+	position:absolute;
+	border:none;
+	display:none;
+}
+#slider div.sliderInner{
+	overflow:hidden;
+	-webkit-transform:rotate(0.000001deg);
+	position:absolute;
+	top:0;
+	left:0;
+}
+#slider>a,#slider video,#slider audio{
+	display:none;
+}
+/* Login Slider Styles End */
+
+/* Login Slider Text Styles Start */
+.slider-text{
+	position:absolute;
+	margin:0 auto;
+	text-align:center;
+	color:#fff;
+	right:0;
+	left:0;
+	top:20%;
+}
+.slider-text h1{
+	font-size:50px;
+	font-weight:500;
+	text-shadow:5px 0 5px rgba(0,0,0,0.9);
+}
+.slider-text h2{
+	font-size:30px;
+	font-weight:400;
+	text-shadow:5px 0 5px rgba(0,0,0,0.9);
+	text-transform:uppercase;
+}
+.slider-text .partner{
+	display:inline-block;
+	padding:40px 100px;
+	margin-top:30px;
+}
+.slider-text .partner h3{
+	margin-top:10px;
+	margin-bottom:20px;
+	text-shadow:5px 0 5px rgba(0,0,0,0.9);
+}
+/*.slider-text .partner .modal-body{
+	position:relative;
+	overflow: hidden;
+	padding:0 30px 20px;
+}
+.partner .modal-body .form-group{
+	text-align:left;
+	margin-bottom:5px;
+	position:relative;
+}
+.partner .modal-content{
+	border-radius:0;
+}*/
+.partner .btn-default,.partner .btn-default:hover{
+	border:none !important;
+	border-radius:2px !important;
+	color:#fff !important;
+	font-size:14px !important;
+	padding:7px 23px !important;
+	text-shadow:none;
+	background:#ff6600 !important;
+	margin-top:10px;
+	width:100%;
+	text-transform:uppercase;
+}
+.partner .btn-default.focus,.partner .btn-default:focus,.partner .btn-default:hover,.partner .btn-default.active,.partner .btn-default:active{
+	background-color:#f36a22 !important;
+	border:1px solid #f36a22 !important;
+	color:#fff !important;
+}
+.partner .form-select{
+	background-image:url("../images/login/drop_icon.png");
+	background-repeat:no-repeat;
+	background-position:97% center;
+}
+.partner select.form-select{
+	padding:5px;
+	font-size:12px;
+	line-height:1;
+	border:1px solid #ddd;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	color:#6f767c;
+}
+.partner .form-select,.partner .form-text{
+	border-radius:0;
+}
+/* Login Slider Text Styles End */
+
+/* Login Second Container Start */
+.home-second-container{
+	background:#fff;
+	position:absolute;
+	left:0;
+	right:0;
+	top:70%;
+	padding:20px;
+	color:#000;
+}
+.home-second-container ul{
+	margin-bottom:0px;
+}
+.home-second-container li{
+	padding:30px !important;
+	border:2px solid;
+	border-style:dotted;
+	font-size:20px;
+	margin-right:15px;
+	width:fit-content;
+}
+.home-second-container h1{
+	margin:0;
+}
+/* Login Second Container End */

@@ -1,0 +1,42 @@
+Resource Not Used:
+Issues
+Promotions
+RateComments
+RateCommentsDetails
+----------------------------------------------------------------------------------------------------
+end_point = https://api.test.hotelbeds.com/
+Accommodations: (9)
+{{endpoint}}/hotel-content-api/1.0/types/accommodations?fields=all&language=ENG&from=1&to=100&useSecondaryLanguage=True
+Boards: (27)
+{{endpoint}}/hotel-content-api/1.0/types/boards?fields=all&language=ENG&from=1&to=100&useSecondaryLanguage=True
+Categories: (63)
+{{endpoint}}/hotel-content-api/1.0/types/categories?fields=all&language=ENG&from=1&to=100&useSecondaryLanguage=True
+Chains: (2271)
+{{endpoint}}/hotel-content-api/1.0/types/chains?fields=all&language=ENG&from=1&to=100&useSecondaryLanguage=True
+Currencies: (165)
+{{endpoint}}/hotel-content-api/1.0/types/currencies?fields=all&language=ENG&from=1&to=165&useSecondaryLanguage=True
+Facilities: (406)
+{{endpoint}}/hotel-content-api/1.0/types/facilities?fields=all&language=ENG&from=1&to=100&useSecondaryLanguage=True
+FacilityGroup: (21)
+{{endpoint}}/hotel-content-api/1.0/types/facilitygroups?fields=all&language=ENG&from=1&to=100&useSecondaryLanguage=True
+FacilityTopologies: (25)
+{{endpoint}}/hotel-content-api/1.0/typesfacilitytypologies?fields=all&language=ENG&from=1&to=100&useSecondaryLanguage=True
+Languages: (33)
+{{endpoint}}/hotel-content-api/1.0/types/languages?fields=all&language=ENG&from=1&to=1000&useSecondaryLanguage=True
+Segments: (14)
+{{endpoint}}/hotel-content-api/1.0/types/segments?fields=all&language=ENG&from=1&to=100&useSecondaryLanguage=True
+Rooms: (7419)
+{{endpoint}}/hotel-content-api/1.0/types/rooms?fields=all&language=ENG&from=1&to=1000&useSecondaryLanguage=True
+Terminals: (1290)
+{{endpoint}}/hotel-content-api/1.0/types/terminals?fields=all&language=ENG&from=1&to=100&useSecondaryLanguage=True
+ImageTypes: (10)
+{{endpoint}}/hotel-content-api/1.0/types/imagetypes?fields=all&language=ENG&from=1&to=100&useSecondaryLanguage=True
+GroupCategories: (7)
+{{endpoint}}/hotel-content-api/1.0/types/groupcategories?fields=all&language=ENG&from=1&to=100&useSecondaryLanguage=True
+----------------------------------------------------------------------------------------------------
+end_point = https://api.test.hotelbeds.com/hotel-content-api/1.0/types/
+type = AnyType
+fields_and_languages = ?fields=all&language=ENG&from=1&to=100&useSecondaryLanguage=True
+
+url = end_point + type + fields_and_languages
+----------------------------------------------------------------------------------------------------

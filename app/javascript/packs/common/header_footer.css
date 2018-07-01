@@ -1,0 +1,384 @@
+/* Login Header Start */
+
+#header {
+	background-color: rgba(255, 255, 255, 0.6);
+	left: 0;
+	position: absolute;
+	right: 0;
+}
+
+.global-logo {
+	float: left;
+	margin: 5px;
+}
+
+.global-logo-inner {
+	max-width: 320px;
+}
+
+.dorak-header {
+	text-decoration: none !important;
+	color: #000;
+	font-size: 15px;
+}
+
+.dorak-header small {
+	margin: 0 6px 0 4px;
+	position: relative;
+	top: 8px;
+	color: #6c6d6f;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.dorak-nav-img {
+	max-width: 60px;
+	max-height: 60px;
+	position: relative;
+	top: 6px;
+}
+
+a img {
+	border: 0 !important;
+	outline: 0 !important;
+}
+
+
+/* Login Header End */
+
+
+/* Login Footer Start */
+
+footer #footer {
+	position: relative;
+}
+
+#footer {
+	background-color: #ededed;
+	/*background-color: rgba(255, 255, 255, 0.5); */
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99;
+	white-space: nowrap;
+	padding: 25px 0 0;
+	top: 100%;
+}
+
+#footer {
+	top: 111%;
+	height: 65px;
+}
+
+#footer .footer-br.no-bor a img {
+	width: 100%;
+}
+
+#footer .copy_right {
+	background-color: #f7f7f7;
+	padding: 0 0 5px;
+	opocity: 0.1;
+}
+
+#footer .copy_right span {
+	font-size: 11px;
+}
+
+#footer a {
+	color: #333;
+	font-size: 12px;
+}
+
+#footer span {
+	color: #333;
+	font-size: 12px;
+}
+
+#footer .customer_support img {
+	margin-right: 5px;
+	width: 20px !important;
+}
+
+#footer .customer_support {
+	padding: 5px 32px 5px 10px;
+	border: 1px solid #ff6600;
+}
+
+#footer .customer_support a {
+	color: #ff6600;
+	cursor: pointer;
+}
+
+.footer #footer {
+	background-color: #ededed;
+	opacity: 1;
+	position: relative;
+	border-top: 1px solid #ddd;
+}
+
+#footer .footer-br {
+	height: 40px;
+}
+
+#footer .footer-br.no-bor {
+	border-right: none;
+}
+
+#footer .social a.linkdin {
+	background-color: #177aaa;
+}
+
+#footer .social a.twitter {
+	background-color: #3cf;
+}
+
+#footer .social a.facebook {
+	background-color: #4460ae;
+}
+
+#footer .social a.instagram {
+	background-color: #cd4378;
+}
+
+#footer .social a.pinteres {
+	background-color: #cf3427;
+}
+
+#footer .social a.youtube {
+	background-color: #cf3427;
+}
+
+#footer .social a {
+	margin: 0 10px 0 0;
+	color: #fff;
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	border-radius: 13px;
+	line-height: 26px;
+	font-size: 15px;
+	text-align: center;
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+	vertical-align: bottom;
+}
+
+
+/* Login Footer End */
+
+
+/* Home Header Start */
+header.navbar {
+	margin-bottom:0 !important;
+}
+.user header.navbar {
+	padding-left:0px;
+}
+
+.logo img {
+	width: 180px;
+}
+
+.nowrap,
+#bdm-view-form .status_deactivate a,
+#bdm-view-form .status_Rejected {
+	white-space: nowrap;
+}
+
+.notify-header .right_header {
+	list-style-type: none;
+	display: block;
+}
+
+.notify-header .right_header .list_item {
+	float: left;
+	border-right: 1px solid #bdc2c6;
+	padding: 0 15px;
+	height: 40px;
+	text-align: center;
+	display: block;
+}
+
+.notify-header .right_header .list_item:last-child {
+	border-right: none;
+}
+
+.notify-header .right_header .list_item img.user_account,
+.notify-header .right_header .list_item img.cart {
+	display: inline-block;
+}
+
+.notify-header .right_header .list_item img.user_account {
+	height: 100%;
+	width: auto;
+}
+
+.notify-header .right_header .list_item img.cart {
+	padding: 0 30px;
+}
+
+.notify-header .right_header .list_item a {
+	font-size: 12px;
+	color: #666466;
+	font-weight: 400;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.notify-header .right_header .list_item ul.dropdown-menu li a {
+	background-color: #f5f5f5;
+}
+
+.notify-header .right_header .list_item ul.dropdown-menu li.user_email a {
+	background-color: transparent;
+}
+
+.notify-header .right_header .list_item a:hover,
+.notify-header .right_header .list_item a:focus {
+	color: #262626;
+	outline: none;
+	text-decoration: none !important;
+}
+
+ul.right_header,
+ul.dropdown-menu {
+	padding: 0;
+}
+
+.right_header li.user_email {
+	padding: 30px 15px 10px 15px;
+	background-color: #6f767c;
+	text-align: center;
+}
+
+.right_header li.user_email a span {
+	padding-top: 10px;
+	margin: 0;
+	word-wrap: break-word;
+	white-space: normal;
+	width: 100%;
+	color: #fff;
+}
+
+.right_header ul.dropdown-menu li.user_email a {
+	color: #fff;
+	padding: 0;
+	background-color: inherit;
+}
+
+.right_header ul.dropdown-menu li.user_email a:hover {
+	background: #6f767c;
+	text-decoration: none !important;
+	color: #fff;
+}
+
+.notify-header .right_header .dropdown-menu li:last-child {
+	border-top: 1px solid #ddd;
+}
+
+.notify-header .right_header li.selected_curr_item ul.option li:last-child {
+	border-top: 0!important;
+}
+
+.notify-header .right_header .list_item:first-child a {
+	font-size: 13px;
+	color: #6f777d;
+	font-weight: 300;
+}
+
+.notify-header .shop-cart .badge {
+	position: absolute;
+	font-size: 11px !important;
+	font-weight: 600;
+	top: -5px;
+	right: 36px;
+	text-align: center;
+	background-color: #ff0000;
+	padding: 2px 5px 3px 5px;
+	display: none !important;
+}
+
+.right_header li a div.username {
+	display: block;
+	margin-left: 5px;
+	width: 100%;
+	clear: left;
+	text-align: left;
+}
+
+.right_header li.selected_curr_item .open ul.option {
+	min-width: 125px;
+	text-align: center;
+}
+
+.selected_curr_item:not(*:root) {
+	width: 40% !important;
+}
+
+.select .caret {
+	position: absolute;
+	right: 10px;
+	margin-top: 10px;
+}
+
+.caret {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: 2px;
+	vertical-align: middle;
+	border-top: 4px dashed;
+	border-top: 4px solid\9;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent
+}
+
+.btn .caret {
+	margin-left: 0
+}
+
+.btn-lg .caret {
+	border-width: 5px 5px 0;
+	border-bottom-width: 0
+}
+
+.btn>.caret,
+.dropup>.btn>.caret {
+	border-top-color: #000!important
+}
+
+.dropup .btn-lg .caret {
+	border-width: 0 5px 5px
+}
+
+.dropup .caret,
+.navbar-fixed-bottom .dropdown .caret {
+	content: "";
+	border-top: 0;
+	border-bottom: 4px dashed;
+	border-bottom: 4px solid\9
+}
+
+.navbar-nav .first a span.caret,
+.navbar-nav .first.active a span.caret {
+	display: none;
+}
+.my_account_image {
+	height:28px;
+	width:40px;
+	float:left;
+}
+.my_account_image img {
+	height:100%;
+	width:100%;
+}
+.fa-angle-down:before {
+	content: "\f107";
+}
+/* Home Header End */
+
+
+/* Home Footer Start */
+
+
+/* Home Footer End */

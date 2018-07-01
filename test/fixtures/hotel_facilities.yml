@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  order: 1
+  number: 1
+  hotel: one
+  facility: one
+
+two:
+  order: 1
+  number: 1
+  hotel: two
+  facility: two

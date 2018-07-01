@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  distance: 1.5
+  terminal: one
+  hotel: one
+
+two:
+  distance: 1.5
+  terminal: two
+  hotel: two

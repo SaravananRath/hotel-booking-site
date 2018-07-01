@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Global Beds | Global Beds</title>
+    <link rel="icon" href="/assets/gb_favicon.png" type="image/png" >
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <script>
+    	__REACT_DEVTOOLS_GLOBAL_HOOK__ = parent.__REACT_DEVTOOLS_GLOBAL_HOOK__
+    </script>
+    <%= javascript_pack_tag @react_component %>
+    <%= stylesheet_pack_tag @react_component %>
+    <script>
+    	window.authenticityToken = "<%= form_authenticity_token %>"
+    </script>
+    <base target="_parent">
+
+  </head>
+  <body>
+  	<div id='react-root'>
+  	</div>
+  </body>
+</html>

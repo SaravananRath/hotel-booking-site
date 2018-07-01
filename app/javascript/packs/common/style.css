@@ -1,0 +1,933 @@
+body{
+	overflow-y: auto;
+	font-synthesis: none;
+	-moz-font-feature-settings: 'kern';
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 'proximanova_regular';
+}
+/*font*/
+@font-face {
+	font-family: 'proximanova_light';
+	src: url('../common/fonts/proximanova_light.ttf') format('truetype'),
+}
+@font-face {
+	font-family: 'proximanova_regular';
+	src: url('../common/fonts/proximanova_regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'proximanova_semibold';
+	src: url('../common/fonts/proximanova_semibold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'proximanova_bold';
+	src: url('../common/fonts/proximanova_bold.ttf') format('truetype');
+}
+/*common css*/
+
+.list-group-item{
+  height: 35px;
+  text-align: top;
+  margin-top: -5px;
+}
+
+
+.container-wrapper{
+	margin-top: 58px;
+}
+ul,
+label{
+	margin-bottom: 0px;
+	font-weight: normal;
+}
+a{
+	outline: 0 !important;
+	outline-offset: 0 !important;
+	text-decoration: none !important;
+}
+.row{
+	margin: 0px;
+}
+.pad0{
+	padding: 0px;
+}
+.padl0{
+	padding-left: 0px;
+}
+.padr0{
+	padding-right: 0px;
+}
+.common-padding{
+	padding: 60px 90px;
+}
+.common-heading{
+	text-align: center;
+}
+.common-heading h5{
+	font-size: 24px;
+	font-family: 'proximanova_semibold';
+	color: #000;
+}
+.common-heading label{
+	width: 46px;
+	height: 3px;
+	background-color: #000;
+	display: block;
+	margin: 0 auto;
+}
+/*button css*/
+.btn-orange{
+	border-radius: 2px;
+	background-color: #ff6600;
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	outline: 0px;
+	outline-offset: 0px;
+	font-family: 'proximanova_semibold';
+	letter-spacing: 1px;
+	padding: 7px 25px;
+	text-transform: uppercase;
+}
+.btn-orange:focus,
+.btn-orange:hover,
+.btn-orange:active,
+.btn-orange:active:focus{
+	background-color: #000;
+	color: #fff;
+}
+
+/* Carousel Fading slide */
+.carousel-fade .carousel-control { z-index: 2; }
+.carousel-fade .item {
+	-webkit-transition-property: opacity;
+	-moz-transition-property: opacity;
+	-o-transition-property: opacity;
+	transition-property: opacity;
+	opacity: 0;
+}
+.carousel-fade .item.active { opacity: 1; }
+@media all and (transform-3d), (-webkit-transform-3d) {
+	.carousel-fade .carousel-inner > .item.next{
+		opacity: 0.95;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+	.carousel-fade .carousel-inner > .item.active {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+/*common form*/
+.common-form{
+	padding: 0px;
+	padding-top: 15px;
+}
+.common-form .form-group{
+	margin-bottom: 20px;
+	position: relative;
+}
+.common-form .form-group label{
+	font-family: 'proximanova_regular';
+	padding-bottom: 5px;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #7A7A7A;
+}
+.common-form .form-group .form-control{
+	box-shadow: none;
+	outline: 0;
+	height: 35px;
+	border:1px solid #ddd;
+	border-radius: 2px;
+}
+.group-icon{
+	position: absolute;
+	right: 10px;
+	top: 30px;
+	cursor: pointer;
+}
+.group-icon .mdi{
+	font-size: 20px;
+	color: rgba(0, 0, 0, 0.54);
+}
+.common-form .form-group select.form-control {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	font-family: 'proximanova_regular';
+	background-position: right 50%;
+	background-repeat: no-repeat;
+	background-image: url("../common/images/select.png");
+	padding: 6px 1.5em 6px 6px;
+	outline: 0;
+	margin-bottom: 10px;
+}
+
+/*page load css*/
+.se-pre-con{
+	/*position:fixed;*/
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:9999;
+	background:#fff;
+}
+
+/*header section*/
+.header-section{
+	background-color: #fff;
+	border-bottom: none;
+	min-height:auto;
+	margin-bottom: 0px;
+	padding: 0px 90px;
+}
+.header-section .navbar-brand{
+	height: auto;
+}
+.header-section .navbar-brand img{
+	width: 130px;
+}
+
+.header-section .profile-section .btn-default .mdi{
+	color: #7E939E;
+	font-size: 24px;
+	line-height: 0px;
+}
+.header-section .profile-section ul li {
+	display: block;
+	padding: 0px 0px;
+}
+.header-section .profile-section ul li a{
+	padding: 15px 15px;
+}
+.header-section .btn-default,
+.header-section .btn-default.hover,
+.header-section .btn-default.active, 
+.header-section .btn-default:active, 
+.header-section .open>.dropdown-toggle.btn-default {
+	background-color: transparent;
+	border: none;
+	outline: 0;
+	padding: 23px 0px;
+	position: relative;
+	top: 4px;
+	box-shadow: none;
+}
+.header-section .profile-section .p-name h5{
+	width: 100px;
+	vertical-align: middle;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	cursor: pointer;
+	margin: 0px;
+}
+.profile-section .dropdown-menu{
+	top: 96%;
+	border-radius: 2px;
+	box-shadow: none;
+}
+.profile-section .dropdown-menu ul li{
+	color: #000;
+}
+.profile-section .dropdown-menu ul li a{
+	color: #000;
+	display: block;
+	padding: 7px 10px;
+}
+.profile-section .dropdown-menu ul li a:hover{
+	background-color: #f6f6f6;
+}
+.header-section .navbar-collapse .country-dropdown .btn-default{
+	padding: 13px 0px;
+}	
+.header-section .navbar-collapse ul li{
+	margin: 0px 20px;
+}
+.header-section .navbar-collapse ul li .dropdown-menu ul li{
+	margin: 0px;
+}
+.header-section .navbar-collapse ul li .country-dropdown .dropdown-menu{
+    box-shadow: none;
+    padding: 0px;
+}
+.header-section .navbar-collapse ul li .country-dropdown .dropdown-menu ul li{
+	display: block;
+	padding: 8px 15px;
+	margin: 0px;
+	cursor: pointer;
+}
+.header-section .navbar-collapse ul li .country-dropdown .dropdown-menu ul li:hover{
+	background-color: #f6f6f6;
+}
+.header-section .navbar-collapse ul li .country-dropdown .btn-default .mdi {
+    color: #7E939E;
+    font-size: 24px;
+    line-height: 0px;
+    vertical-align: middle;
+}
+
+/*before login header*/
+.before-login-header{
+	position: absolute;
+	top: 0;
+	background-color: rgba(255, 255, 255, 0.94);
+	margin-bottom: 0px;
+	border: none;
+	z-index: 99;
+	width: 100%;
+	padding: 0px 60px;
+	min-height: auto;
+}
+.before-login-header .navbar-brand{
+	height: auto;
+}
+
+
+/*secondary menu*/
+.secondary-menu{
+	background-color: #ff6600;
+	padding: 0px 90px;
+}
+.secondary-menu-icon label{
+	padding: 13px 10px;
+	cursor: pointer;
+	color: #fff;
+}
+.secondary-menu-icon label .mdi{
+	font-size: 24px;
+	color: #fff;
+	line-height: 0px;
+	vertical-align: middle;
+}
+.secondary-menu-list{
+	text-align: right;
+}
+.secondary-menu-list ul li{
+	display: inline-block;
+}
+.secondary-menu-list ul li a:hover,
+.secondary-menu-icon label:hover{
+	background-color:rgba(0, 0, 0, 0.05);
+}
+.secondary-menu-list ul li a{
+	color: #fff;
+	font-family: 'proximanova_semibold';
+	font-size: 14px;
+	padding: 13px 15px;
+	display: inline-block;
+}
+
+/*search wrapper*/
+.search-wrapper{
+	background-color: #f6f6f6;
+	padding: 25px 90px;
+}
+.search-card{
+	background-color: #fff;
+	border-radius: 4px;
+	padding:20px 15px;
+	box-shadow: 0 2px 14px 0 rgba(0,0,0,0.12);
+}
+.search-card h5{
+	font-family: 'proximanova_bold';
+	margin: 0px;
+	font-size: 18px;
+	margin-bottom: 5px;
+	color: #191919;
+}
+.search-card p{
+	font-family: 'proximanova_regular';
+	margin-bottom: 0px;
+	color: #7A7A7A;
+}
+.search-card .common-btn{
+	display: block;
+	text-align: right;
+}
+.room-label{
+	text-align: right;
+	padding: 35px 0px;
+	padding-bottom: 0px;
+}
+.room-label label{
+	color: #7A7A7A;
+}
+.room-column{
+	padding: 0px;
+}
+.banner-carousel{
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 2px 14px 0 rgba(0,0,0,0.12);
+	display: inline-block;
+	position: relative;
+	padding: 0px;
+}
+.banner-carousel .carousel-caption{
+	box-shadow: none;
+	text-shadow: none;
+	position: initial;
+	text-align: left;
+	padding: 31px 15px;
+}
+.banner-carousel .carousel-caption h5{
+	font-family: 'proximanova_bold';
+	color: #000;
+	font-size: 18px;
+	margin: 0px;
+	text-transform: uppercase;
+}
+.banner-carousel .carousel-indicators {
+	bottom: 80px;
+}
+.carousel-inner .item img{
+	width: 100%;
+	object-fit: contain;
+}
+.booking-confirm-container{
+	background-color: #fff;
+	padding: 40px 90px;
+	padding-bottom: 25px;
+}
+.booking-count-list{
+	background-color: #fff;
+	border-radius: 2px;
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+}
+.booking-count-list:hover {
+	box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.04);
+}
+.booking-count-list a{
+	display: block;
+}
+.booking-count-list a .bc-img{
+	display: inline-block;
+	padding: 15px 15px;
+	width: 17%;
+	text-align: center;
+}
+.booking-count-list a .bc-desc{
+	display: inline-block;
+	vertical-align: top;
+	padding: 15px 15px;
+	position: relative;
+	width: 80%;
+	border-left: 1px solid #ddd;
+}
+.booking-count-list a .bc-desc h5{
+	font-family: 'proximanova_semibold';
+	font-size: 15px;
+	margin: 0px;
+	padding-bottom: 5px;
+	color: #000;
+}
+.booking-count-list a .bc-desc label{
+	font-family: 'proximanova_regular';
+	font-size: 14px;
+	margin-bottom: 0px;
+	color: #000;
+}
+.booking-count-list a .bc-desc span{
+	font-family: 'proximanova_semibold';
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	font-size: 24px;
+	color: #000;
+}
+.recent-booking-wrapper{
+	background-color: #fff;
+	padding: 40px 90px;
+	padding-top: 0px;
+	display: block;
+}
+.recent-booking-heading h5{
+	font-family: 'proximanova_bold';
+	font-size: 18px;
+	margin: 0px;
+	padding-bottom: 20px;
+}
+.recent-booking-table .table{
+	border: 1px solid #ddd;
+}
+.recent-booking-table .table thead tr th{
+	background-color: #34495e;
+	vertical-align: top;
+	font-size: 12px;
+	color: #fff;
+	border-bottom: none;
+	width: 110px;
+	padding: 8px 5px;
+}
+.recent-booking-table .table tbody tr td{
+	font-size: 12px;
+	padding: 8px 5px;
+}
+.recent-booking-table .table tbody tr td .booking-no a{
+	color: #ff6600;
+	text-decoration: none;
+	border-bottom: 1px solid #ff6600;
+}
+.booking-date label,
+.booking-date span{
+	display: block;
+}
+.recent-booking-table .table tbody tr td label.booing-status{
+	font-size: 12px;
+	background-color: #f1f1f1;
+	color: #000;
+	padding: 7px 12px;
+	padding-bottom: 5px;
+	width: 100%;
+	text-align: center;
+	border-radius: 2px;
+	font-family: 'proximanova_semibold';
+}
+.recent-booking-table .table tbody tr td label.booing-status.success{
+	background-color: #2ecc71;
+	color: #fff;
+}
+.recent-booking-table .table tbody tr td label.booing-status.failure{
+	background-color: #e74c3c;
+	color: #fff;
+}
+.recent-booking-table .table tbody tr td label.collapse-icon{
+	width: 100%;
+	text-align: center;
+}
+.recent-booking-table .table tbody tr td label.collapse-icon .mdi{
+	font-size: 24px;
+	cursor: pointer;
+}
+.booking-collaspe-wrapper{
+	padding: 15px 0px;
+}
+.booking-payment-summary{
+	background-color: #f1f1f1;
+	padding: 15px 15px;
+}
+.booking-payment-summary h5{
+	font-family: 'proximanova_semibold';
+	font-size: 16px;
+	margin: 0px;
+	padding-bottom: 10px;
+}
+.booking-payment-summary ul li{
+	display: inline-block;
+	width: 100%;
+}
+.booking-payment-summary ul li label,
+.booking-payment-summary ul li span{
+	font-size: 14px;
+	display: inline-block;
+	width: 47%;
+}
+.booking-payment-summary ul li span{
+	text-align: right;
+}
+.booking-agent label{
+	font-family: 'proximanova_semibold';
+	font-size: 14px;
+}
+.booking-agent span{
+	font-size: 14px;
+}
+.booking-detail-list{
+	padding: 20px 0px;
+}
+.booking-detail-list ul li{
+	display: inline-block;
+	margin-right: 40px;
+	vertical-align: top;
+}
+.booking-detail-list ul li label{
+	display: block;
+	font-family: 'proximanova_semibold';
+	font-size: 15px;
+	padding-bottom: 3px;
+	text-transform: uppercase;
+}
+.booking-detail-list ul li span{
+	display: block;
+	font-size: 14px;
+	font-family: 'proximanova_regular';
+}
+.booking-detail-list ul li span a{
+	color: #ff6600;
+	text-decoration: none;
+	border-bottom: 1px solid #ff6600;
+}
+.booking-detail-list ul li span.hotel-name{
+	width: 150px;
+}
+.booking-detail-collapse{
+	display: none;
+}
+.booking-footer-list{
+
+}
+.booking-footer-list ul li{
+	display: inline-block;
+	padding: 0px 20px;
+	border-left: 1px solid #ddd;
+}
+.booking-footer-list ul li:first-child{
+	border-left:none;
+}
+.booking-footer-list ul li a{
+	font-size: 13px;
+	font-family: 'proximanova_regular';
+	color: #000;
+}
+
+/*footer section*/
+.footer-section{
+	background-color: #f1f1f1;
+	padding: 50px 90px;
+}
+.footer-logo{
+	margin-bottom: 25px;
+}
+.footer-logo img{
+	width: 120px;
+}
+.footer-links{
+
+}
+.footer-links h5{
+	font-family: 'proximanova_semibold';
+	font-size: 16px;
+	margin:0px;
+	padding-bottom: 20px;
+}
+.footer-links ul li{
+	display: block;
+	padding-bottom: 10px;
+	color: #000;
+	font-size: 14px;
+}
+.footer-links ul li a{
+	color: #000;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 14px;
+}
+.sub-footer{
+	padding: 10px 0px;
+}
+.sub-footer label{
+	display: block;
+	font-size: 14px;
+	text-align: center;
+}
+.footer-links ul li a.cutomer-support{
+	border: 1px solid #ef6230;
+	padding: 10px 15px;
+	color: #ef6230;
+	font-size: 14px;
+	border-radius: 2px;
+}
+.footer-links ul li a.cutomer-support .mdi{
+	font-size: 20px;
+	color: #ef6230;
+	position: relative;
+	top: 4px;
+}
+.footer-links.social-links ul li{
+	display: inline-block;
+}
+.footer-links.social-links ul li label{
+	height: 40px;
+	width: 40px;
+	border-radius: 100%;
+	display: inline-block;
+}
+.footer-links.social-links ul li label a .mdi{
+	font-size: 20px;
+	color: #191919;
+}
+
+/*homepage*/
+.homepage-banner{
+	height: 600px;
+	overflow: hidden;
+	position: relative;
+}
+.banner-overlay{
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	height: 600px;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 0;
+}
+.homepage-banner-desc{
+	position: absolute;
+	top: 55%;
+	transform: translateY(-50%);
+	z-index: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.homepage-banner-desc h1{
+	color: #fff;
+	font-size: 36px;
+	margin:0px;
+	padding-bottom: 10px;
+	display: block;
+	text-transform: uppercase;
+	font-family: 'proximanova_bold';
+}
+.homepage-banner-desc label{
+	color: #fff;
+	font-size: 24px;
+	font-family: 'proximanova_semibold';
+	display: block;
+	padding-bottom: 20px;
+}
+.package-wrapper{
+	padding: 60px 0px;
+}
+.package-card{
+	box-shadow: 0 2px 14px 0 rgba(0,0,0,0.12);
+}
+.package-card a{
+	display: block;
+	text-decoration: none;
+}
+.package-card a .package-image{
+	height: 190px;
+	overflow: hidden;
+	width: 100%;
+}
+.package-card a .package-image img{
+	width: 100%;
+	height: 190px;
+	object-fit: cover;
+	-webkit-transition: all .5s linear;
+	-moz-transition: all .5s linear;
+	-o-transition: all .5s linear;
+	transition: all .5s linear;
+	-webkit-transform: scale3d(1,1,1);
+	-moz-transform: scale3d(1,1,1);
+	-o-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+.package-card a .package-image img:hover{
+	-webkit-transform: scale3d(1.1,1.1,1);
+	-moz-transform: scale3d(1.1,1.1,1);
+	-o-transform: scale3d(1.1,1.1,1);
+	transform: scale3d(1.1,1.1,1);
+}
+.package-card a .package-name{
+	padding: 10px 15px;
+}
+.package-card a .package-name h5{
+	font-family: 'proximanova_semibold';
+	font-size: 16px;
+	color: #000;
+}
+
+/*modal*/
+.ReactModal__Overlay--after-open {
+	overflow: hidden;
+    overflow-y: scroll;
+    background-color: rgba(22, 27, 31, 0.57) !important;
+    z-index: 999
+
+}
+
+.showhide{
+      position: absolute;
+    top: 34px;
+    right: 10px;
+ }
+
+.common-modal .modal-body{
+	overflow-y: scroll;
+	padding: 25px;
+}
+.common-modal .modal-content{
+	box-shadow: none;
+	border-radius: 2px;
+}
+.common-modal-header{
+	padding: 5px 15px;
+}
+.common-modal-header h5{
+	display: inline-block;
+	font-family: 'proximanova_semibold';
+	font-size: 22px;
+	margin:0px;
+	color: #000;
+}
+.common-modal-header label{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	cursor: pointer;
+}
+.common-modal-header label .mdi{
+	font-size: 20px;
+}
+
+/*register modal*/
+.register-btn{
+	padding: 20px 0px;
+}
+.signin-form{
+	width: 450px;
+}
+.signin-form .form-group{
+	display: inline-block;
+	width: 150px;
+	margin-bottom: 0px;
+	margin-right: 5px;
+	vertical-align: top;
+}
+.signin-form .form-group .form-control{
+	display: inline-block;
+	width: 100%;
+}
+.signin-form .btn-orange{
+	height: 34px;
+	vertical-align: top;
+}
+.common-form .form-group label.forget-password{
+	position: relative;
+	top: 5px;
+	left: 5px;
+}
+.common-form .form-group label.forget-password a{
+	color: #000;
+	font-size: 12px;
+	text-transform: capitalize;
+}
+
+/*reset password*/
+.resetpassword-wrapper{
+	padding: 60px 90px;
+	background-color: #f6f6f6;
+	height: 100vh;
+}
+.reset-password-heading{
+	padding: 15px 0px;
+}
+.reset-password-heading h5{
+	font-size: 20px;
+	color: #000;
+	text-align: center;
+}
+.reset-password-form{
+	margin: 0 auto;
+	width: 380px;
+	background-color: #fff;
+	padding: 25px 25px;
+}
+.reset-password-form .btn{
+	width: 100%;
+}
+
+/*visa*/
+.visa-heading{
+	border-bottom:1px solid #ddd;
+	padding-bottom: 15px;
+}
+.visa-heading h5{
+	display: inline-block;
+	font-size: 24px;
+	color: #000;
+	margin: 0px;
+	padding: 5px 0px;
+	position: relative;
+	top: 10px;
+}
+.visa-heading .btn{
+	float: right;
+	display: inline-block;
+}
+.visa-tabs{
+	background-color: #fff;
+	margin-top: 20px;
+}
+.visa-tabs ul li{
+	display: block;
+}
+.visa-tabs ul li a{
+	color: #000;
+	font-size: 15px;
+	padding: 15px 20px;
+	display: block;
+	font-family: 'proximanova_semibold';
+}
+.visa-tabs ul li.active a{
+	background-color: #2f90d3;
+	color: #fff;
+}
+.visa-description-wrapper{
+	background-color: #fff;
+	margin-top: 20px;
+	padding: 40px 30px;
+}
+.visa-desc{
+	margin-bottom: 25px;
+}
+.visa-desc:last-child{
+	margin-bottom: 0px;
+}
+.visa-desc h5{
+	font-family: 'proximanova_bold';
+	font-size: 18px;
+	margin: 0px;
+	padding-bottom: 10px;
+}
+.visa-desc ul{
+	list-style: initial;
+	margin-left: 17px;
+}
+.visa-desc ul li{
+	padding-bottom: 5px;
+}
+.visa-desc p{
+	font-size: 14px;
+}
+.visa-notes p{
+	color: #ff6600;
+	font-size: 14px;
+}
+
+/*menu option*/
+.secondary-menu-option{
+	position: absolute;
+	top: 46px;
+	background-color: #fff;
+	width: 300px;
+	z-index: 9;
+}
+.secondary-menu-option ul li{
+	border-bottom: 1px solid #ddd;
+}
+.secondary-menu-option ul li label{
+	color: #000;
+	font-size: 15px;
+	width: 100%;
+}
+.secondary-menu-option ul li label .mdi{
+	color: #000;
+	font-size: 14px;
+}
+
+/*responsive*/
+@media screen and (max-width: 1100px){
+	
+}
+
+@media screen and (min-width: 991px) and (max-width: 768px){
+	
+}

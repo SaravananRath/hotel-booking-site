@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cnd_name: MyString
+  cnd_code: MyString
+  cnd_group: MyString
+  priority: 1
+  is_active: 1
+  deleted: MyString
+  created: 1
+  updated: 1
+  updated_by: 1
+  cnd_parent_id: 
+  generic_field: MyString
+
+two:
+  cnd_name: MyString
+  cnd_code: MyString
+  cnd_group: MyString
+  priority: 1
+  is_active: 1
+  deleted: MyString
+  created: 1
+  updated: 1
+  updated_by: 1
+  cnd_parent_id: 
+  generic_field: MyString

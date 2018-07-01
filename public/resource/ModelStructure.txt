@@ -1,0 +1,80 @@
+Phone number:string:index type:string phoneable:references{polymorphic}
+
+Country code:string:index iso_code:string
+
+Destination code:string:index name:string:index country:reference
+
+Zone code:integer:index name:string description:string destination:reference
+
+GroupZone code:integer:index name:string description:string zone:reference destination:reference
+
+LanguageCode code:string:index
+
+Language code:string:index name:string:index description:string language_code:reference
+
+Accommodation code:string:index type_multi_description:string type_description:string language_code:reference
+
+Board code:string:index description:string multi_lingual_code:string language_code:reference
+
+Category code:string:index simple_code:integer group:string description:string language_code:reference accommodation:reference
+
+GroupCategory code:string:index order:integer:index name:string description:string language_code:reference
+
+Chain code:string:index description:string language_code:reference
+
+Currency code:string:index description:string currency_type:string language_code:reference
+
+FacilityGroup code:interger:index description:string language_code:reference
+
+FacilityTypology code:integer:index number_flag:boolean logic_flag:boolean fee_flag:boolean distance_flag:boolean age_from_flag:boolean age_to_flag:boolean date_from_flag:boolean date_to_flag:boolean time_from_flag:boolean time_to_flag:boolean ind_yes_or_no_flag:boolean amount_flag:boolean currency_flag:boolean app_type_flag:boolean text_flag:boolean
+
+Facility code:integer:index description:string language_code:reference facility_group:reference facility_typology:reference
+
+Segment code:integer:index description:string language_code:reference
+
+Room code:integer:index type:string:index characteristic:string:index min_pax:integer max_pax:integer max_adults:integer max_children:integer min_adults:integer description:string type_description:string characteristic_description:string:index language_code:reference
+
+Terminal code:integer:index type:string:index name:string description:string language_code:reference country:reference
+
+ImageType code:string:index description:string:index language_code:reference
+
+Wildcard room_type:string:index room_code:string:index characteristic_code:string:index hotel_room_description:string
+
+Hotel code:integer:index name:string:index description:string longitude:float latitude:float address:string postal_code:string email:string license:string website:string s2c:string country:reference destination:reference zone:reference category:reference group_category:reference chain:reference accommodation:reference
+
+Image path:string:index order:integer image_type:reference hotel:reference
+
+HotelWildcard hotel:reference wildcard:reference
+
+InterestPoint order:integer poi_name:string:index distance:string:index facility:reference
+
+HotelTerminal distance:float terminal:reference hotel:reference
+
+HotelFacility order:integer ind_logic:boolean number:integer hotel:reference facility:reference
+
+HotelBoard board:reference hotel:reference
+
+HotelSegment segment:reference hotel:reference
+
+----------------------------------------------------------------------------------------------------
+
+Model Count:
+Less than 100:
+	LanguageCode
+	Language
+	Accommodation
+	Board
+	Category
+	GroupCategory
+	FacilityGroup
+	FacilityTypology
+	Segment
+	ImageType
+
+Country: 202
+Destination: 4987
+Chain: 2271
+Currency: 165
+Facility: 406
+Room: 7419
+Terminal: 1290

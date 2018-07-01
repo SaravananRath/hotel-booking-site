@@ -1,0 +1,3 @@
+class GbsearchcacheController < ApplicationController
+  
+end

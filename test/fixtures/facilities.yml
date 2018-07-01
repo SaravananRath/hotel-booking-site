@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code: 1
+  description: MyString
+  language_code: one
+  facility_group: one
+  facility_typology: one
+
+two:
+  code: 1
+  description: MyString
+  language_code: two
+  facility_group: two
+  facility_typology: two

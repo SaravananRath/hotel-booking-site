@@ -1,0 +1,2 @@
+module GbsearchcacheHelper
+end

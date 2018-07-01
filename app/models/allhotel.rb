@@ -1,0 +1,2 @@
+class Allhotel < ApplicationRecord
+end

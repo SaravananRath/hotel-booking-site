@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: MyString
+  type: 
+  phoneable: one
+  phoneable_type: Phoneable
+
+two:
+  number: MyString
+  type: 
+  phoneable: two
+  phoneable_type: Phoneable

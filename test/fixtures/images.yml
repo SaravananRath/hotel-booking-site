@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  path: MyString
+  order: 1
+  image_type: one
+  hotel: one
+
+two:
+  path: MyString
+  order: 1
+  image_type: two
+  hotel: two

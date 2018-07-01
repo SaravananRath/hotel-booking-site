@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  searchkey: MyString
+  fromdate: MyString
+  todate: MyString
+  query: MyString
+  query_type: MyString
+  rooms: 1
+  adults: 1
+  children: 1
+  child1age: 1
+  child2age: 1
+  child3age: 1
+  child4age: 1
+
+two:
+  searchkey: MyString
+  fromdate: MyString
+  todate: MyString
+  query: MyString
+  query_type: MyString
+  rooms: 1
+  adults: 1
+  children: 1
+  child1age: 1
+  child2age: 1
+  child3age: 1
+  child4age: 1

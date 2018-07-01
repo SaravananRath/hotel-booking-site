@@ -1,0 +1,25 @@
+<% if params["start"].nil? %>
+  <div id="staticprocess">
+    <br><a href="?start=true" id="startprocess"> Start the Process </a>
+  </div>
+  <div id="startedprocess" style="display: none">
+    <br><br>
+    <img src="/assets/ajax-loader.gif">
+    Mapper is running Now... Don't Refresh..
+  </div>
+<% end %>
+
+<% if params["start"].present? %>
+  Done..
+<% end %>
+
+<br><br><a href="?deleteall=true">Delete All</a>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#startprocess").click(function(){
+      $("#staticprocess").hide();
+      $("#startedprocess").show();
+    })
+  })
+</script>

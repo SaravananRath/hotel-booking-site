@@ -1,0 +1,66 @@
+/* User Registration Form Start */
+.register_now_text, .forgot_password_text {
+	font-size: 20px !important;
+	color: #333;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 400 !important;
+	margin: 7px 0 3px;
+	text-shadow: none !important;
+}
+
+.register_tag_line {
+	font-size: 12px;
+	font-weight: 400;
+	color: #333;
+	text-align: center;
+	margin-bottom: 0px;
+	opacity: 0.5;
+}
+
+.fname{
+	margin-left: 15px; 
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.submit_button{
+`background-color: #ff6600;
+}
+
+.showhide{
+      position: absolute;
+    top: 31px;
+    right: 27px;
+  }
+
+.ReactModal__Overlay--after-open{
+    background-color: rgba(22, 27, 31, 0.57) !important;
+}
+/* User Registration Form End */

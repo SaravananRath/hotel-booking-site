@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code: MyString
+  simple_code: 1
+  group: MyString
+  description: MyString
+  language_code: one
+  accommodation: one
+
+two:
+  code: MyString
+  simple_code: 1
+  group: MyString
+  description: MyString
+  language_code: two
+  accommodation: two

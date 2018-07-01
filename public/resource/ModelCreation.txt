@@ -1,0 +1,82 @@
+Based on API:
+
+rails g model Phone number:string:index type:string phoneable:referencess{polymorphic}
+
+----------------------------------------------------------------------------------------------------
+Location:
+
+rails g model Country code:string:index iso_code:string
+
+rails g model City name:string:index
+
+rails g model Destination code:string:index name:string:index country:references
+
+rails g model Zone code:integer:index name:string description:string destination:references
+
+rails g model GroupZone code:integer:index name:string description:string zone:references destination:references
+
+----------------------------------------------------------------------------------------------------
+Types:
+
+rails g model LanguageCode code:string:index
+
+rails g model Language code:string:index name:string:index description:string language_code:references
+
+rails g model Accommodation code:string:index type_multi_description:string type_description:string language_code:references
+
+rails g model Board code:string:index description:string multi_lingual_code:string language_code:references
+
+rails g model Category code:string:index simple_code:integer group:string description:string language_code:references accommodation:references
+
+rails g model GroupCategory code:string:index order:integer:index name:string description:string language_code:references
+
+rails g model Chain code:string:index description:string language_code:references
+
+rails g model Currency code:string:index description:string currency_type:string language_code:references
+
+rails g model FacilityGroup code:interger:index description:string language_code:references
+
+rails g model FacilityTypology code:integer:index number_flag:boolean logic_flag:boolean fee_flag:boolean distance_flag:boolean age_from_flag:boolean age_to_flag:boolean date_from_flag:boolean date_to_flag:boolean time_from_flag:boolean time_to_flag:boolean ind_yes_or_no_flag:boolean amount_flag:boolean currency_flag:boolean app_type_flag:boolean text_flag:boolean
+
+rails g model Facility code:integer:index description:string language_code:references facility_group:references facility_typology:references
+
+rails g model Segment code:integer:index description:string language_code:references
+
+rails g model Terminal code:integer:index type:string:index name:string description:string language_code:references country:references
+
+rails g model ImageType code:string:index description:string:index language_code:references
+
+rails g model Wildcard room_type:string:index room_code:string:index characteristic_code:string:index hotel_room_description:string
+
+rails g model Stay stay_type:string, order:string, description:string
+
+----------------------------------------------------------------------------------------------------
+
+rails g model Hotel code:integer:index name:string:index description:string longitude:float latitude:float address:string postal_code:string email:string license:string website:string s2c:string country:references city:references destination:references zone:references category:references group_category:references chain:references accommodation:references
+
+rails g model Room code:integer:index type_code:string:index characteristic:string:index min_pax:integer max_pax:integer max_adults:integer max_children:integer min_adults:integer description:string type_description:string characteristic_description:string:index language_code:references hotel:references
+
+rails g model Image path:string:index order:integer image_type:references hotel:references
+
+rails g model HotelRoom hotel:references room:references
+
+rails g model HotelWildcard hotel:references wildcard:references
+
+rails g model InterestPoint order:integer poi_name:string:index distance:string:index facility:references
+
+rails g model HotelTerminal distance:float terminal:references hotel:references
+
+rails g model HotelFacility order:integer number:integer hotel:references facility:references
+
+rails g model HotelBoard board:references hotel:references
+
+rails g model HotelSegment segment:references hotel:references
+
+rails g model RoomFacility room:references facility:references
+
+rails g model RoomStay room:references stay:references
+
+----------------------------------------------------------------------------------------------------
+
+rails g model HotelDump code:integer:index data:binary
+----------------------------------------------------------------------------------------------------

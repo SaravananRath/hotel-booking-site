@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code: 1
+  type_code: MyString
+  characteristic: MyString
+  min_pax: 1
+  max_pax: 1
+  max_adults: 1
+  max_children: 1
+  min_adults: 1
+  description: MyString
+  type_description: MyString
+  characteristic_description: MyString
+  language_code: one
+  hotel: one
+
+two:
+  code: 1
+  type_code: MyString
+  characteristic: MyString
+  min_pax: 1
+  max_pax: 1
+  max_adults: 1
+  max_children: 1
+  min_adults: 1
+  description: MyString
+  type_description: MyString
+  characteristic_description: MyString
+  language_code: two
+  hotel: two

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  golbalbeds: 1
+  hotelbeds: 1
+  adonis: 1
+  hotelname: MyString
+  city: MyString
+
+two:
+  golbalbeds: 1
+  hotelbeds: 1
+  adonis: 1
+  hotelname: MyString
+  city: MyString

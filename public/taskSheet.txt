@@ -1,0 +1,64 @@
+Should we form uniq Cities list? Or follow any one
+
+Hotel name query:
+
+1) Match with Hotelbeds name
+2) Match with (Adonis - All hotels) name
+
+
+--------------------
+
+Next Things to do :
+
+1) Fix Rails Admin Keep only required Table - Done
+2) Handling Search - Availability & DeDupe
+3) Handling Search - Cache Result in GB Cache
+
+
+
+
+Adonis Hotels List - Ready
+HotelBeds List - Ready
+
+How the search is going to happen? - Ready
+
+FromDate
+ToDate
+NoPassenger - Adult , Children , Children age
+NoOfRoom
+
+Supplier layer will accepts above attributes and reply with set of results.
+
+Location Search:
+
+1) Check the HotelBeds API for 100 Hotels
+2) Check the Adonis API for 100 Hotels
+3) Check the mapping table and dedupe depends on price
+4) Now get the information about hotelbed Cache
+5) If the hotel is not available in Hotelbed cache, get available info from Adonis ceach
+6) Store the result set in the new GB cache table
+7) Return the first 10 result and search key
+8) If the search request have Page No's and search key, go to GB cache table and return the result depend on pagination.
+
+
+Hotel Search:
+
+1) Check the HotelBeds API for hotelcode
+2) Check the Adonis API for hotelcode
+3) Check the mapping table and dedupe depends on price
+4) Now get the information about hotelbed Cache
+5) If the hotel is not available in Hotelbed cache, get available info from Adonis
+6) Return the result
+
+Do we need to form a common list? - Ready
+
+Yes :  GBhotelcode | HotelBeds | Adonis
+
+
+How we going to handle Booking History and PDF outputs?
+
+??
+
+
+
+

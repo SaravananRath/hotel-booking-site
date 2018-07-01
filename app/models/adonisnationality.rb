@@ -1,0 +1,2 @@
+class Adonisnationality < ApplicationRecord
+end
