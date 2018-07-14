@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # HotelBeds - Rails API app
 
 ![Logo](https://developer.hotelbeds.com/files/logo-nuevo.png)
@@ -10,3 +11,7 @@ Provides inventry and pricing details.
 
 ## GIT Integration
 Github notification integrated.
+=======
+# hotel-booking-site
+Hotelbeds, a hotel booking site.
+>>>>>>> 04ea73791caca498d4e85e66b10ebe0ac50199e6
